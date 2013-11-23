@@ -6,6 +6,10 @@ import grails.transaction.Transactional
 @Transactional
 class EstudianteService {
 
+    /**
+     *
+     * @return
+     */
     public List<Estudiante> getListaEstudiante() {
           return Estudiante.list();
     }
