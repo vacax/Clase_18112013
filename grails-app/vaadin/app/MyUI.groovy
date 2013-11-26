@@ -9,6 +9,7 @@ import com.vaadin.grails.Grails
 import edu.pucmm.pwa.clase18112013.domain.Estudiante
 import edu.pucmm.pwa.clase18112013.domain.Materia
 import edu.pucmm.pwa.clase18112013.services.EstudianteService
+import com.vaadin.addon.calendar.ui.Calendar;
 
 /**
  *
@@ -21,6 +22,9 @@ class MyUI extends UI {
     protected void init(VaadinRequest vaadinRequest) {
 
 		VerticalLayout layout = new VerticalLayout()
+
+        Calendar calendar = new Calendar()
+        layout.addComponent(calendar)
 
         String homeLabel = Grails.i18n("default.home.label")
         Label label = new Label(homeLabel)
@@ -55,4 +59,5 @@ class MyUI extends UI {
 
 		setContent(layout)
     }
+
 }

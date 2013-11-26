@@ -10,6 +10,8 @@ vaadin {
     // servletClass = "com.mycompany.MyGrailsAwareApplicationServlet"
 
     productionMode = false
+
+    widgetset = "app.AppWidgetSet"
 }
 
 environments {
